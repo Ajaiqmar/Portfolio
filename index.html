@@ -15,46 +15,93 @@
     <div id="page-main" class="page-view active">
       <section class="hero">
         <h1>
-          Hi, I am Ajay. I'm a software developer who builds
-          <a href="#projects">scalable products</a>, cares about
-          <a href="#skills">clean architecture</a> and writes
-          <a href="#experience">reliable software</a>.
+          Hi, I am Ajay Kumar. I'm a software developer who cares very much
+          about writing <a href="#experience">reliable software</a> in the Large Language Model era.
         </h1>
         <div class="hero-links">
           <a href="#about" class="read-more">About</a>
           <a href="#" class="read-more" data-nav="blog">Blog</a>
-          <a href="./assets/resume.pdf" class="read-more" download>Resume</a>
-          <a href="https://github.com/" class="read-more" target="_blank" rel="noreferrer">Github</a>
+          <a href="./assets/resume.pdf" class="read-more" target="_blank" rel="noreferrer">Resume</a>
         </div>
       </section>
       <section id="about" class="section">
         <h2>About</h2>
         <p>
-          I worked at Zoho on the Trident Suite — Mail, Cliq, Notes — contributing to
-          App Search, Mail Compose, a reusable Editor Component, EML Preview, and core
-          Mail features. I now continue at Strategy (formerly MicroStrategy), focused on
-          learning, leading, and building products that make a difference.
+          What started off as “I can make computer do cool stuff using these programming
+          languages” has diversified into something like “I can architect and ship products
+          end-to-end in a clearly less reasonable time”, “I can help make your products and
+          organizational workflows AI native” and then some more.
         </p>
+        <p>
+          Have about 3.5 years of experience in this line of work and to be honest rather than being
+          scared, am all for where it is going to take me in the world of Computer Science.
+        </p>
+      </section>
+
+      <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="project-list">
+          <article>
+            <h3>Software Developer</h3>
+            <p>Strategy (formerly MicroStrategy) · Oct 2025 – Present</p>
+            <ul class="exp-points">
+              <li>Helped migrate the core product “Workstation” from a WPF hard client to a React soft client.</li>
+              <li>Sunset the legacy “Integrity Manager” app, migrating it from an XML API to REST.</li>
+              <li>Mentored interns toward quality output through regular knowledge-transfer sessions.</li>
+              <li>Driving org-wide AI-native workflows: built Gamma, an AI bot that pulls context from a Jira ticket, reproduces the issue, proposes a fix, and raises a PR for human review.</li>
+              <li>Built an MCP server on top of IServer, a core C++ product, and pitched replacing a costly translation tool with an LLM skill delivering the same output.</li>
+              <li>Currently building a new product that combines AI and BI capabilities.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Member of Technical Staff</h3>
+            <p>Zoho · Jun 2023 – Oct 2025</p>
+            <ul class="exp-points">
+              <li>Designed and developed scalable components for Zoho Trident Suite using .NET Framework.</li>
+              <li>Improved App Search performance with 50ms debounce logic reducing redundant API calls.</li>
+              <li>Owned App Common Search and EML Preview modules ensuring reliability and integration.</li>
+              <li>Engineered reusable Editor Component with customizable formatting bars.</li>
+              <li>Delivered features for Mail Filters, Templates, and Shared Mailbox.</li>
+              <li>Proposed performance optimizations reducing memory footprint and latency.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Project Trainee</h3>
+            <p>Zoho · Jan 2023 – May 2023</p>
+            <ul class="exp-points">
+              <li>Developed ‘Zwiggy’, a UWP-based food delivery platform following Clean Architecture principles.</li>
+              <li>Reviewed by leads and managers for software design proficiency.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Summer Intern</h3>
+            <p>Zoho · Mar 2022 – May 2022</p>
+            <ul class="exp-points">
+              <li>Built console and Windows apps using C# and SQLite.</li>
+              <li>Explored Universal Windows Platform (UWP) for application development.</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <section id="skills" class="section">
       <h2>Skills</h2>
       <div class="project-list">
         <article>
-          <h3>Core Engineering</h3>
-          <p>Clean Architecture, OOPS, SOLID, Performance Optimization, Feature Ownership</p>
+          <h3>Languages</h3>
+          <p>C#, Java, Python, JavaScript, TypeScript, C, C++, PHP, HTML, CSS, XAML</p>
         </article>
         <article>
-          <h3>Platform</h3>
-          <p>C#, UWP, WebView2, Console Applications, Cross-service Development</p>
+          <h3>Databases</h3>
+          <p>SQL, SQLite, PostgreSQL, MongoDB</p>
         </article>
         <article>
-          <h3>Quality</h3>
-          <p>Test Case Writing, Internal QA, Bug Fixing, Crash Resolution</p>
+          <h3>Frameworks</h3>
+          <p>Node.js, jQuery, Bootstrap, React.js, Flask, Express.js, UWP, WPF, WinForms, Spring Boot</p>
         </article>
         <article>
-          <h3>Specialized</h3>
-          <p>Model Context Protocol (MCP), GitHub MCP, Claude Agent SDK, SQLite</p>
+          <h3>Tools</h3>
+          <p>Docker, Kubernetes, Maven, Git, Ollama, Claude, MCP</p>
         </article>
       </div>
     </section>
@@ -63,57 +110,25 @@
       <h2>Projects</h2>
       <div class="project-list">
         <article>
-          <h3>App Common Search</h3>
-          <p>Cross-service search with a smart 50ms debounce — reducing API calls and backend load. <span class="tag">Zoho Trident</span></p>
+          <h3>InscribeAI — AI-Powered Rich Text Editor</h3>
+          <p>A smart editor built on the FastMail Rich Text Editor with LLM integration, letting users generate content via natural commands (e.g. “/Give me a template for leave letter”). Streamlines AI-assisted writing by removing copy-paste workflows. <span class="tag">UWP · .NET · Ollama</span></p>
+          <p class="project-link"><a href="https://github.com/Ajaiqmar/Windows/tree/main/IQEditor" target="_blank" rel="noreferrer">View on GitHub</a></p>
         </article>
         <article>
-          <h3>Reusable Editor Component</h3>
-          <p>WebView2 editor with customizable, reorderable formatting toolbar modes. <span class="tag">Component Design</span></p>
-        </article>
-        <article>
-          <h3>EML Preview</h3>
-          <p>Owned .eml preview end-to-end for local files and in-app attachment viewers. <span class="tag">Feature Ownership</span></p>
-        </article>
-        <article>
-          <h3>Mail Compose Stabilization</h3>
-          <p>Resolved crashes and improved interaction smoothness for WebView-based compose. <span class="tag">Reliability</span></p>
-        </article>
-        <article>
-          <h3>Zwiggy</h3>
-          <p>Food-delivery partner UWP app built in 2–3 months following clean architecture. <span class="tag">Trainee Project</span></p>
-        </article>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <div class="project-list">
-        <article>
-          <h3>Software Developer</h3>
-          <p>Strategy (formerly MicroStrategy) · Oct 2025 – Present</p>
-        </article>
-        <article>
-          <h3>Member of Technical Staff</h3>
-          <p>Zoho · Jun 2023 – Oct 2025</p>
-        </article>
-        <article>
-          <h3>Project Trainee</h3>
-          <p>Zoho · Jan 2023 – May 2023</p>
-        </article>
-        <article>
-          <h3>Summer Intern</h3>
-          <p>Zoho · Mar 2022 – May 2022</p>
+          <h3>Linkly — URL Shortener</h3>
+          <p>A full-stack URL shortener built with MongoDB, Express.js, React, and Node.js. Implements REST APIs with MongoDB for persistence. <span class="tag">MERN Stack</span></p>
+          <p class="project-link"><a href="https://github.com/Ajaiqmar/Lab/tree/main/URL%20Shortener" target="_blank" rel="noreferrer">View on GitHub</a></p>
         </article>
       </div>
     </section>
 
     <section id="contact" class="section">
       <h2>Say hello</h2>
-      <p>
-        Mail : <a href="mailto:ajaykumar.m.career@gmail.com">ajaykumar.m.career@gmail.com</a><br>
-        Mobile : +91 90803 62583<br>
-        <a href="https://www.linkedin.com/in/ajaiqmar" class="read-more" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-        <a href="https://x.com/ajaiqmar_dev" class="read-more" target="_blank" rel="noreferrer" aria-label="X"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+      <p class="social-links">
+        <a href="mailto:ajaykumar.m.career@gmail.com" class="read-more">Mail</a>
+        <a href="https://www.linkedin.com/in/ajaiqmar" class="read-more" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://x.com/ajaiqmar_dev" class="read-more" target="_blank" rel="noreferrer">Twitter</a>
+        <a href="https://github.com/Ajaiqmar" class="read-more" target="_blank" rel="noreferrer">Github</a>
       </p>
     </section>
     </div>
@@ -122,7 +137,7 @@
       <section class="section">
         <div class="blog-header">
           <h2>Blog</h2>
-          <a href="#" class="read-more" data-nav="main">← Back</a>
+          <a href="#" class="read-more" data-nav="main">Back</a>
         </div>
         <div class="blog-list">
           <article>
